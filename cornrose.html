@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CornRose - NutriSnack</title>
+    <link rel="stylesheet" href="styles-cornrose.css">
+</head>
+<body>
+    <header>
+        <div class="logo">NutriSnack</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="home">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#" id="products">Productos</a>
+                    <ul class="dropdown-content">
+                        <li><a href="beetchips.html">BeetChips</a></li>
+                        <li><a href="cornrose.html">CornRose</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" id="contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="language-switcher">
+            <button onclick="changeLanguage('es')">ES</button>
+            <button onclick="changeLanguage('en')">EN</button>
+            <button onclick="changeLanguage('fr')">FR</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="brand-presentation">
+            <div class="brand-image">
+                <img class="logo-animation" src="logo/corn_rose_logo.jpg" alt="Logo de CornRose">
+            </div>
+        </section>
+    
+        <section class="mission-vision-values">
+            <div class="mission">
+                <h2 id="mission-title">Misión</h2>
+                <p id="mission-text-cornrose">Llevar delicia mexicana al paladar extranjero.</p>
+            </div>
+            <div class="vision">
+                <h2 id="vision-title">Visión</h2>
+                <p id="vision-text-cornrose">Ser reconocida por su sabor en toda América del norte, ofreciendo galletas con un auténtico toque mexicano.</p>
+            </div>
+            <div class="values">
+                <h2 id="values-title">Valores</h2>
+                <ul>
+                    <li id="passion"><strong>Pasión:</strong> Poner dedicación y amor en cada galleta para brindar una experiencia única.</li>
+                    <li id="teamwork"><strong>Trabajo en equipo:</strong> Colaborar para crear un producto de alta calidad.</li>
+                    <li id="authenticity"><strong>Autenticidad:</strong> Mantener el verdadero sabor y esencia de México en cada producto.</li>
+                    <li id="responsibility"><strong>Responsabilidad:</strong> Garantizar procesos de producción seguros.</li>
+                    <li id="trust"><strong>Confianza:</strong> Para construir una relación sólida con los clientes.</li>
+                </ul>
+            </div>
+        </section>
+    
+        <section class="products">
+            <h2 id="products-title">Nuestros Productos</h2>
+            <div class="product-list">
+                <div class="product">
+                    <h3 id="product1-name">CornRose</h3>
+                    <img src="imagenes/imagen009.jpg" alt="CornRose Clásico">
+                    <p id="product1-description">CornRose: Un toque emotivo que transmite la pasión y el cuidado que se pone en cada galleta.</p>
+                    <p>Certificación: fitosanitarias (SENASICA), certificación de origen, sanitarias (COFREPRIS)</p>
+                    <p>Regulaciones canadienses (SFCR)</p>
+                    <p><strong>Precio:</strong> <span>$1996.45</span></p>
+                    <button onclick="addToCart('CornRose', 1996.45)">Agregar al Carrito</button>
+                </div>
+                <div class="product">
+                    <h3 id="product2-name">CornRose</h3>
+                    <img src="imagenes/imagen010.jpg" alt="CornRose">
+                    <p id="product2-description">CornRose: el sabor del maíz en cada bocado</p>
+                    <p>Certificación: fitosanitarias (SENASICA), certificación de origen, sanitarias (COFREPRIS)</p>
+                    <p>Regulaciones canadienses (SFCR)</p>
+                    <p><strong>Precio:</strong> <span>$1996.45</span></p>
+                    <button onclick="addToCart('CornRose', 1996.45)">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="cart">
+            <h2 id="cart-title">Carrito de Compras</h2>
+            <ul id="cart-items"></ul>
+            <p><strong id="cart-total-label">Total:</strong> $<span id="cart-total">0.00</span></p>
+            <button id="checkout-button" onclick="checkout()">Finalizar Compra</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> NutriSnack. Todos los derechos reservados.</p>
+        <a href="terms.html" id="terms">Términos y Condiciones</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - NutriSnack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">NutriSnack</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="home">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#" id="products">Productos</a>
+                    <ul class="dropdown-content">
+                        <li><a href="beetchips.html">BeetChips</a></li>
+                        <li><a href="cornrose.html">CornRose</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" id="contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="language-switcher">
+            <button onclick="changeLanguage('es')">ES</button>
+            <button onclick="changeLanguage('en')">EN</button>
+            <button onclick="changeLanguage('fr')">FR</button>
+        </div>
+    </header>
+
+    <main>
+        <h1 id="contact-title">Contacto</h1>
+        <p id="contact-description">¿Tienes alguna pregunta, comentario o sugerencia?</p>
+    
+        <section class="contact-form">
+            <h2 id="contact-form-title">Formulario de Contacto</h2>
+            <form action="#" method="post">
+                <label for="name" id="name-label">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email" id="email-label">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="subject" id="subject-label">Asunto:</label>
+                <input type="text" id="subject" name="subject" required>
+    
+                <label for="message" id="message-label">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <button type="submit" id="submit-button">Enviar Mensaje</button>
+            </form>
+        </section>
+    
+        <section class="contact-info">
+            <h2 id="contact-info-title">Información de Contacto</h2>
+            <p><strong id="address-label">Dirección:</strong> <span id="address">Av. Peñuelas 3, San Pedrito Peñuelas I, 76148 Santiago de Querétaro, Qro.</span></p>
+            <p><strong id="phone-label">Teléfono:</strong> <span id="phone">+52 442 878 3165</span></p>
+            <p><strong id="email-contact-label">Correo Electrónico:</strong> <span id="email-contact">contacto@nutrisnack.com</span></p>
+        </section>
+    
+        <section class="map">
+            <h2 id="location-title">Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.234704803641!2d-100.40398402514967!3d20.619287980929506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35ae43ffd4927%3A0xb9e194a2187f40f7!2sInternational%20University%20of%20Queretaro%20UNIQ!5e0!3m2!1sen!2smx!4v1740702128810!5m2!1sen!2smx" 
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> NutriSnack. Todos los derechos reservados.</p>
+        <a href="terms.html" id="terms">Términos y Condiciones</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

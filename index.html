@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriSnack - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">NutriSnack</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="home">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#" id="products">Productos</a>
+                    <ul class="dropdown-content">
+                        <li><a href="beetchips.html">BeetChips</a></li>
+                        <li><a href="cornrose.html">CornRose</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" id="contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="language-switcher">
+            <button onclick="changeLanguage('es')">ES</button>
+            <button onclick="changeLanguage('en')">EN</button>
+            <button onclick="changeLanguage('fr')">FR</button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="brand-presentation">
+            <div class="brand-image">
+                <img class="logo-animation" src="logo/logonutrisnacks.png" alt="Logo NutriSnack">
+            </div>
+        </section>
+
+        <div class="carousel-wrapper">
+        
+            <div class="side-image left">
+                <img id="left-image" src="imagenes/imagen006.jpg" alt="Imagen Izquierda">
+            </div>
+        
+        
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="imagenes/imagen001.jpg" alt="Imagen 1">
+                    <img src="imagenes/imagen008.jpg" alt="Imagen 2">
+                    <img src="imagenes/imagen003.jpg" alt="Imagen 3">
+                    <img src="imagenes/imagen006.jpg" alt="Imagen 4">
+                    <img src="imagenes/imagen002.jpg" alt="Imagen 5">
+                </div>
+            </div>
+        
+        
+            <div class="side-image right">
+                <img id="right-image" src="imagenes/quesobeetchips.jpg" alt="Imagen Derecha">
+            </div>
+        </div>
+        
+        <section class="mission-vision-values">
+            <div class="mission">
+                <h2 id="mission-title">Misión</h2>
+                <p id="mission-text">Compartir el verdadero sabor de México a través de snacks deliciosos, apoyando a los productores locales y celebrando nuestra cultura.</p>
+            </div>
+            <div class="vision">
+                <h2 id="vision-title">Visión</h2>
+                <p id="vision-text">Ser una empresa exportadora reconocida internacionalmente, por su variedad de snacks saludables y compromiso con la sustentabilidad.</p>
+            </div>
+            <div class="values">
+                <h2 id="values-title">Valores</h2>
+                <ul>
+                    <li id="authenticity"><strong>Autenticidad:</strong> Resaltamos la esencia de México en cada producto.</li>
+                    <li id="sustainability"><strong>Sostenibilidad:</strong> Por la utilización de empaques ecológicos.</li>
+                    <li id="innovation"><strong>Innovación:</strong> Evolucionamos para satisfacer las necesidades del mercado global.</li>
+                    <li id="honesty"><strong>Honestidad:</strong> Ser transparentes con los ingredientes que utilizamos.</li>
+                    <li id="social-responsibility"><strong>Responsabilidad social:</strong> Consideración de la salud y nutrición de los clientes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="tiktok-video">
+            <h2>Descubre más sobre nosotros</h2>
+            <blockquote class="tiktok-embed" cite="https://www.instagram.com/gomezgerardoavila_?igsh=MWJsZ28wczN1aXY5NA==" data-video-id="7484318628511304966" 
+            style="max-width: 405px;min-width: 325px;" > <section> <a target="_blank" title="@jessysmarure" href="https://www.tiktok.com/@jessysmarure?refer=embed">@jessysmarure</a> <p></p> <a target="_blank" title="♬ sonido original - Jessys Marure" href="https://www.tiktok.com/music/sonido-original-7484318665400453893?refer=embed">♬ sonido original - Jessys Marure</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                <script async src="https://www.tiktok.com/embed.js"></script>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> NutriSnack. Todos los derechos reservados.</p>
+        <a href="terms.html" id="terms">Términos y Condiciones</a>
+        <a href="https://www.facebook.com/share/1BbFwRcWxW/?mibextid=wwXIfr/tupagina" target="_blank" id="facebook-link">
+            Síguenos en Facebook</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
